@@ -1,0 +1,11 @@
+<div>
+    <div class="content-container">
+        <mat-icon id="close-icon" (click)="onDismiss()">close</mat-icon>
+        
+    </div>
+    <span class="content-span full-width spanMessage" >{{data.message}}</span>
+    <div class="dialogButtonClass" *ngIf="data.successFlag!='success'">
+    <button mat-flat-button id="no-button" (click)="onDismiss()" style="margin-bottom: 10px;">No</button>
+    <button mat-flat-button id="yes-button" (click)="onConfirm()" style="margin-bottom: 10px;">Yes</button>
+    </div>
+</div>

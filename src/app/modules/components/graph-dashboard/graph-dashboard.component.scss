@@ -1,0 +1,141 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #toolPanel {
+    text-align: center;
+  }
+  
+  .spacer {
+    display: inline-block;
+    min-width: 20px;
+  }
+  
+  #myChart {
+    height: 100%;
+  }
+  .graph-box{
+    width: 328px;
+    height: 159px;
+    //border: 2px solid blueviolet;
+    border-radius: 4px;
+  }
+  #mymain {
+    //height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+//   #mymain div {
+//     padding:5px;
+//   }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+   // border: 2px solid aliceblue;
+    border-radius: 14px;
+    margin-top: 6px;
+    width: 1010px;
+    gap: 5px 5px;
+  }
+  .kpi-container{
+    display: flex;
+    flex-wrap: wrap;
+    //border: 2px solid gray;
+    border-radius: 14px;
+    margin-top: 0px;
+    width: 1010px;
+    gap: 5px 5px;
+  }
+  .kpi-label{
+    width: 196px;
+    border: 1px solid white;
+    height: 74px;
+    margin-top: 2px;
+   // border-radius: 6px;
+    background-color:white;
+  }
+  
+  .flex-container > div {
+    //background-color: #f1f1f1;
+    width: 309px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .tab-close {
+    color: gray;
+    text-align: right;
+    cursor: pointer;
+  }
+  .spent-label{
+    display: flex;
+    margin-top: 13px;
+    color: blue;
+    font-size: 20px;
+  }
+  .main{
+    color: black;
+    font-size: 22px;
+    margin-left: 2px;
+  }
+  .next-lable{
+    color: red;
+    font-size: 13px;
+  }
+  .active{
+    border: 2px solid red
+    // border: 2px solid aliceblue
+  }
+
+  // ::ng-deep.mat-tab-label .mat-tab-label-content {
+  //   flex-wrap: wrap!important;
+  // }
+  
+  // ::ng-deep.mat-tab-label .mat-tab-label-content span{
+  //   display: flex!important;
+  //   flex: 1 0 100%!important;
+  //   justify-content: center!important;
+  // }
+
+  
+
+  ////////////////////////
+  
+  
+    .mat-tab-label {
+      opacity: 1;
+     // padding: 5px;
+      border: 2px solid blueviolet;
+     // border-bottom: none;
+      color: #333;
+      min-width: 50px;
+      border-top-right-radius: inherit;
+      border-top-left-radius: inherit;
+    }
+    
+ 
+
+  // .mat-tab-labels {
+  //   .mat-tab-label {
+  //     opacity: 1;
+  //     padding: 5px;
+  //     border: 1px solid gray;
+  //     border-bottom: none;
+  //     color: #333;
+  //     min-width: 50px;
+  //   }
+  //   .mat-tab-label-active {
+  //     @extend .mat-tab-label;
+      // color: blue;
+      // -webkit-box-shadow: inset 0px 3px 0px 0px blue;
+      // -moz-box-shadow: inset 0px 3px 0px 0px blue;
+      // box-shadow: inset 0px 3px 0px 0px blue;
+      // border-top: 1px solid gray;
+      // border-left: 1px solid gray;
+      // border-right: 1px solid gray;
+  //   }
+  // }

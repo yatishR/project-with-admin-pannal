@@ -1,0 +1,33 @@
+<div class="form-layout">
+    <!-- <div *ngIf="error" style="margin-left: 76px;
+    color: red;">{{error}}</div> -->
+    <!-- <form style="margin-left: 18px;margin-right: 14px;margin-top: 16px;" [formGroup]="formDetails" (ngSubmit)="loginFrom()"> -->
+        <form style="margin-left: 18px;margin-right: 14px;" [formGroup]="formDetails" (ngSubmit)="loginFrom()">
+        <h1 class="h1Style">Welcome</h1>
+        <p class="ptagStyle">Please Enter Your Login Password</p>
+         <!-- <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput  placeholder="Ex. pat@example.com" style="width: 50px;">
+        </mat-form-field> -->
+        <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="email" placeholder="Ex. pat@example.com">
+          </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Password</mat-label>
+          
+          <input matInput [type]="type?'password':'text'" matInput formControlName="password" placeholder="Anhu567">
+          <mat-icon matSuffix (click)="changetype()" [name]="iconname ?'eye-outline':'eye-off-outline'">remove_red_eye</mat-icon>
+        </mat-form-field>
+        <p style="text-align:right;margin-top: -12px; color: blueviolet;cursor: pointer;"><a  routerLink="/forgot-password">Forgot Password</a></p>
+        <button
+          mat-flat-button
+          color="primary"
+           color="primary" style="width: 263px;height: 31px;background: blueviolet;
+          border-radius: 5px;">
+  <span>Submit</span>
+    </button>
+    <p class="create-account"><a routerLink="/register">Create Account1</a></p>
+
+      </form>
+</div>

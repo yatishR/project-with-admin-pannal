@@ -1,0 +1,25 @@
+<div style="text-align: right;margin-bottom: 18px;height: 14px;margin-right: 9px;"><button type="button" (click)="exportUser()" style="    height: 24px;
+    background: blueviolet;"> Export User</button></div>
+<div>
+    <table id="customers">
+        <tr>
+            <th>name</th>
+            <th>Email</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Phone Number</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.type}}</td>
+            <td>{{user.status}}</td>
+            <td>{{user.phone}}</td>
+            <td>
+                <button style="background-color: blueviolet;border-radius: 4px;" (click)="openDialogForDeleteUser(user)">Delete</button>
+                <button style="background-color: blueviolet;border-radius: 4px;margin-left: 12px;" (click)="openDialogForEditUser(user)">EditUser</button>
+            </td>
+        </tr>
+    </table>
+</div>

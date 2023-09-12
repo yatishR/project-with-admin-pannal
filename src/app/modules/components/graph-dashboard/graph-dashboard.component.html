@@ -1,0 +1,141 @@
+
+  <div class="kpi-container">
+      <div class="kpi-label" [ngClass]="{'mat-tab-label' : flag==true}">
+        <h2 style="margin-bottom: -10px" (click)="showKpi()">Spend</h2>
+        <label class="spent-label">11328.68 Million $</label>
+        <label class="next-lable"><span style="color: black;">1.2%</span> Up From Py</label>
+    </div>
+    <div class="kpi-label" [ngClass]="{'mat-tab-label' : flag1==true}">
+        <h2 style="margin-bottom: -10px" (click)="showKpiProcurment()">Procuroment Roi</h2>
+        <label class="spent-label">8.5%</label>
+        <label style="color: #74dd42;font-size: 13px;"><span style="color: black;">.7%</span> Up From Py</label>
+    </div>
+    <div class="kpi-label">
+       <h2 style="margin-bottom: -10px">Active Supplier</h2> 
+       <label class="spent-label">132,345</label>
+        <label style="color: #74dd42;font-size: 13px;"><span style="color: black;">1132</span> down From Py</label>
+    </div>
+    <div class="kpi-label">
+        <h2 style="margin-bottom: -10px">NFC COMPLIENCE</h2>
+        <label class="spent-label">98.7%</label>
+        <label style="color: #74dd42;font-size: 13px;"><span style="color: black;">0.2%</span> down From Py</label>
+    </div>
+    <div class="kpi-label">
+        <h2 style="margin-bottom: -10px">Suppliers in Es 400</h2>
+        <label class="spent-label">98.7%</label>
+        <label style="color: #74dd42;font-size: 13px;"><span style="color: black;">137</span> down From Py</label>
+    </div>
+  </div>
+
+  <!-- <div> -->
+    <!-- <mat-tab-group>
+      <mat-tab label="First"> Content 1 </mat-tab>
+      <mat-tab label="Second"> Content 2 </mat-tab>
+      <mat-tab label="Third"> Content 3 </mat-tab>
+    </mat-tab-group> -->
+<div [ngClass]="{'mat-tab-label' : flag==true}">
+    <div class="flex-container" *ngIf="flag">
+    <div><div class="wrapper graph-box">
+        <div id="toolPanel">
+        </div>
+        <ag-charts-angular
+          style="height: 100%"
+          [options]="options"
+        ></ag-charts-angular>
+      </div></div>
+      <div><div class="wrapper graph-box">
+        <div id="toolPanel">
+        </div>
+        <ag-charts-angular
+          style="height: 100%"
+          [options]="options"
+        ></ag-charts-angular>
+      </div></div>
+      <div><div class="wrapper graph-box">
+        <div id="toolPanel">
+        </div>
+        <ag-charts-angular
+          style="height: 100%"
+          [options]="options"
+        ></ag-charts-angular>
+      </div></div>
+      <div><div class="wrapper graph-box">
+        <div id="toolPanel">
+        </div>
+        <ag-charts-angular
+          style="height: 100%"
+          [options]="options"
+        ></ag-charts-angular>
+      </div></div>
+      <div><div class="wrapper graph-box">
+        <div id="toolPanel">
+        </div>
+        <ag-charts-angular
+          style="height: 100%"
+          [options]="options"
+        ></ag-charts-angular>
+      </div></div>
+      <div><div class="wrapper graph-box">
+        <div id="toolPanel">
+        </div>
+        <ag-charts-angular
+          style="height: 100%"
+          [options]="options"
+        ></ag-charts-angular>
+      </div></div>
+  </div>
+</div>
+<div [ngClass]="{'mat-tab-label' : flag1==true}">
+  <div class="flex-container" *ngIf="flag1">
+  <div><div class="wrapper graph-box">
+      <div id="toolPanel">
+      </div>
+      <ag-charts-angular
+        style="height: 100%"
+        [options]="options"
+      ></ag-charts-angular>
+    </div></div>
+    <div><div class="wrapper graph-box">
+      <div id="toolPanel">
+      </div>
+      <ag-charts-angular
+        style="height: 100%"
+        [options]="options"
+      ></ag-charts-angular>
+    </div></div>
+    <div><div class="wrapper graph-box">
+      <div id="toolPanel">
+      </div>
+      <ag-charts-angular
+        style="height: 100%"
+        [options]="options"
+      ></ag-charts-angular>
+    </div></div>
+    <div><div class="wrapper graph-box">
+      <div id="toolPanel">
+      </div>
+      <ag-charts-angular
+        style="height: 100%"
+        [options]="options"
+      ></ag-charts-angular>
+    </div></div>
+    <div><div class="wrapper graph-box">
+      <div id="toolPanel">
+      </div>
+      <ag-charts-angular
+        style="height: 100%"
+        [options]="options"
+      ></ag-charts-angular>
+    </div></div>
+    <div><div class="wrapper graph-box">
+      <div id="toolPanel">
+      </div>
+      <ag-charts-angular
+        style="height: 100%"
+        [options]="options"
+      ></ag-charts-angular>
+    </div></div>
+</div>
+</div>
+
+  

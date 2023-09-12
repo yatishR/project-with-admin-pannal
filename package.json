@@ -11,15 +11,23 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.0",
+    "@angular/cdk": "^16.2.1",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
     "@angular/core": "^16.2.0",
     "@angular/forms": "^16.2.0",
+    "@angular/material": "^16.2.1",
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@canvasjs/angular-charts": "^1.0.3",
+    "@material/data-table": "^15.0.0-canary.bc9ae6c9c.0",
+    "@material/dialog": "^15.0.0-canary.bc9ae6c9c.0",
+    "@syncfusion/ej2-angular-charts": "^22.2.12",
+    "ag-charts-angular": "^8.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "xlsx": "^0.18.5",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

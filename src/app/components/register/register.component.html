@@ -1,0 +1,33 @@
+<div class="form-layout">
+    <div *ngIf="error" style="margin-left: 76px;
+    color: red;">{{error}}</div>
+    <form style="margin-left: 18px;margin-right: 14px;margin-top: 16px;" [formGroup]="formDetails" (ngSubmit)="submitFrom()">
+        <h4 style="color: blueviolet; margin-bottom: 13px;text-align: center;">Registration Page</h4>
+         <mat-form-field class="example-full-width" style="width:260px !important">
+          <mat-label>Name</mat-label>
+          <input type="text" matInput formControlName="name" placeholder="name" style="width: 50px;">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" style="width:260px !important">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email" placeholder="pat@example.com" style="width: 50px;">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" style="width:260px !important">
+          <mat-label>Mobile</mat-label>
+          <input type="email" matInput formControlName="mobile" placeholder="pat@example.com" style="width: 50px;">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" style="width:260px !important">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput formControlName="password" placeholder="password" style="width: 50px;">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" style="width:260px !important">
+          <mat-label>Confirm Password</mat-label>
+          <input type="text" matInput formControlName="confirm_password" placeholder="Confirm Password" style="width: 50px;">
+        </mat-form-field>
+        <div  class="alert alert-danger errorClass" *ngIf="formDetails.value.confirm_password && formDetails.value.confirm_password != formDetails.value.password">
+          <div >Password and Confirm Password must be match.</div>
+      </div>
+        <button [disabled]="!formDetails.valid"mat-flat-button color="primary" style="width: 263px;margin-bottom:12px;height:31px;background: blueviolet;border-radius:5px;" routerLink="/register">Register</button>
+        <p class="create-account"><a routerLink="/login">Login Page</a></p>
+      </form>
+     
+</div>
